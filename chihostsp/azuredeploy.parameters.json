@@ -3,10 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sharepoint2013SP1DownloadLink": {
-            "value": null
+            "value": "https://download.my.visualstudio.com/pr/en_sharepoint_server_2013_with_sp1_x64_dvd_3823428.iso?t=82e0c48c-5903-4064-8f7f-e7ce335d8c59\u0026e=1476413997\u0026h=3d372d6e135a4cac19ed845b7147f673\u0026su=1"
         },
         "sharepoint2013ProductKey": {
-            "value": null
+            "value": "WB7H4-3N8DH-DBCT6-9MQWM-R6WFK"
+        },
+        "domainName": {
+            "value": "hostedsp.local"
+        },
+        "adminUsername": {
+            "value": "masadmin"
         }
     }
 }
