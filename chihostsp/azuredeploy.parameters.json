@@ -2,17 +2,25 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "sharepoint2013SP1DownloadLink": {
-            "value": "https://download.my.visualstudio.com/pr/en_sharepoint_server_2013_with_sp1_x64_dvd_3823428.iso?t=82e0c48c-5903-4064-8f7f-e7ce335d8c59\u0026e=1476413997\u0026h=3d372d6e135a4cac19ed845b7147f673\u0026su=1"
-        },
-        "sharepoint2013ProductKey": {
-            "value": "WB7H4-3N8DH-DBCT6-9MQWM-R6WFK"
-        },
+      "sharepoint2013SP1DownloadLink": {
+        "value": "https://chiisossa.blob.core.windows.net/chiisos/en_sharepoint_server_2013_with_sp1_x64_dvd_3823428.iso"
+      },
+      "sharepoint2013ProductKey": {
+        "value": "WB7H4-3N8DH-DBCT6-9MQWM-R6WFK"
+      },
         "domainName": {
             "value": "hostedsp.local"
         },
         "adminUsername": {
             "value": "masadmin"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/41d83b2d-b50d-459e-90ef-9b3036a2f25b/resourceGroups/chikeyvaults/providers/Microsoft.KeyVault/vaults/chikeyvault"
+                },
+                "secretName": "spsecret"
+            }
         }
     }
 }
