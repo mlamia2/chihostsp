@@ -21,7 +21,7 @@
             "metadata": {
                 "description": "The name of the Administrator of the new VMs and Domain"
             },
-            "defaultValue": "lcladmin"
+            "defaultValue": "lcladmin2"
         },
         "adminPassword": {
             "type": "securestring",
