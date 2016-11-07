@@ -5,7 +5,7 @@
         "domainName": {
             "type": "string",
             "metadata": {
-                "description": "The domain name"
+                "description": "The Active Directory domain name"
             },
             "defaultValue": "contoso.com"
         },
@@ -21,7 +21,7 @@
             "metadata": {
                 "description": "The name of the Administrator of the new VMs and Domain"
             },
-            "defaultValue": "lcladmin3"
+            "defaultValue": "masadmin"
         },
         "adminPassword": {
             "type": "securestring",
